@@ -1,0 +1,4 @@
+This is a quick example with captcha integrated from the Securimage http://www.phpcaptcha.org/ Captcha script. Please note this example is integrated to CI Bonfore, so you may need to update the controller names and template calls accordingly.
+
+Thanks,
+SethT
