@@ -17,7 +17,11 @@ class Example extends Front_Controller {
 	    
 	$this->form_validation->set_rules('captcha_image', 'Security Code', 'callback_check_captcha');
 
-	Template::set('captcha_image', '/captcha/');
+	//this is for ci bonfire
+	//Template::set('captcha_image', '/captcha/');
+
+	//normal ci
+	$data = array('captcha_image' => 'captcha');
 	
 	if ( $this->form_validation->run() == FALSE ) {
 		//validation failed
@@ -25,7 +29,11 @@ class Example extends Front_Controller {
 		//captcha correct and validation successful
 	}
 	
-	Template::render();
+	//this is for ci bonfire
+	//Template::render();
+
+	//normal ci
+	$this->load->view('example');
 	
 	}
 	
