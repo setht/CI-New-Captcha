@@ -33,7 +33,7 @@ class Example extends Front_Controller {
 	//Template::render();
 
 	//normal ci
-	$this->load->view('example');
+	$this->load->view('example', $data);
 	
 	}
 	
